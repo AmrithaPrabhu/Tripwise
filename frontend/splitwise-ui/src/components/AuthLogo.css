@@ -1,0 +1,120 @@
+/* html,
+body {
+  width: 77%;
+  height: 99%;
+} */
+
+.title {
+  display: flex;
+  flex-direction: row;
+}
+
+.blinks {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.dosis-style {
+  font-family: "Dosis", sans-serif;
+  font-size: 150px;
+  font-style: normal;
+  color: #fff;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+@media only screen and (min-width: 1180px) {
+  body {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.wrap {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  color: #dbc9aa;
+  line-height: 40px;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 400;
+  padding-top: 5.5rem;
+  margin-bottom: 0;
+  transform: translate(-35%, -15%);
+}
+.wrap .eye {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  width: 30px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.wrap .eye:before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  left: 10px;
+  right: 0;
+  top: 2px;
+  bottom: 0;
+  border-radius: 50%;
+  background: #141414;
+}
+
+.eyes-closed .wrap .eye.blink {
+  animation: none !important;
+  height: 10px;
+  transform: translate(0%, 100%);
+}
+.eyes-closed .wrap .eye:before {
+  right: 10px;
+  left: 0;
+}
+.wrap .eye:first-child {
+  left: 0;
+}
+.wrap .eye:last-child {
+  right: 0;
+}
+.wrap .eye.blink {
+  -webkit-animation: blink 2s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+          animation: blink 2s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+@-webkit-keyframes blink {
+  0%, 8% {
+    height: 40px;
+  }
+  10%, 12% {
+    height: 5px;
+  }
+  14%, 100% {
+    height: 40px;
+  }
+}
+
+@keyframes blink {
+  0%, 8% {
+    height: 40px;
+  }
+  10%, 12% {
+    height: 5px;
+  }
+  14%, 100% {
+    height: 40px;
+  }
+}

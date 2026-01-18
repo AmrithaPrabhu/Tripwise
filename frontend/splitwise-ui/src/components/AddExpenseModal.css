@@ -1,0 +1,91 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 20px;
+  width: 400px;
+  border-radius: 12px;
+}
+
+.modal-card h3 {
+  text-align: center;
+}
+
+.add-expense{
+  background-color: #131633;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.modal-card input,
+.modal-card select{
+  height: 38px;
+  padding: 0 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.split-options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.unequal-split {
+  margin-top: 8px;
+}
+
+.split-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.split-row input {
+  width: 120px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cancel-btn {
+  background: #ddd;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-expense {
+  background: #2d8cff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-expense:hover {
+  background: #1c6fe5;
+}

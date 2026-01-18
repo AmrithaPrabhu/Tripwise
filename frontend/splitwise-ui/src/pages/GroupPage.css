@@ -1,0 +1,102 @@
+.group-container{
+    background-color: white;
+    align-self: center;
+    margin-top: 3%;
+    margin-left: 17%;
+    height: 87vh;
+    width: 120vh;
+    border-radius: 26px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.group-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* space aligned */
+    align-items: center;
+    width: 100%;
+}
+
+.options-btn {
+    height: 40px;
+    min-width: 120px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.group-title{
+    text-align: center;
+}
+
+.add-expense{
+    background-color: #131633;
+    color: white;
+    font-weight: 600;
+}
+
+.balances-btn{
+    background-color: #15724e;
+    color: white;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.settle-btn{
+    background-color: #a2352b;
+    color: white;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.export-btn{
+    background-color: #131633;
+    color: white;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.balances-modal {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.balance-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.balance-row.settled {
+  opacity: 0.6;
+}
+
+.settle-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.settle-row select,
+.settle-row input {
+  padding: 6px;
+}
+
+.max-hint {
+  font-size: 12px;
+  color: #777;
+}
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #555;
+}
+
+.back-btn:hover {
+  color: #000;
+}

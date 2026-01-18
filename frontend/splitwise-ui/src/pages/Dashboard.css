@@ -1,0 +1,9 @@
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-content {
+  padding: 1rem;
+}

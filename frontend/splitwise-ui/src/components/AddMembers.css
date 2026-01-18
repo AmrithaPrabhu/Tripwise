@@ -1,0 +1,72 @@
+/* AddMembers.css */
+
+.members {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.members-input-row {
+  display: flex;
+  gap: 10px;
+}
+
+.members input {
+  flex: 1;
+  height: 38px;
+  padding: 0 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-right: 10px;
+}
+
+.members input:focus {
+  border-color: #131633;
+}
+
+.members button {
+  height: 38px;
+  padding: 0 14px;
+  border-radius: 6px;
+  border: none;
+  background-color: #131633;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.member-list {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.member-chip {
+  background-color: #e0e4ff;
+  color: #131633;
+  padding: 6px 10px;
+  border-radius: 16px;
+  font-size: 14px;
+}
+
+.btn-dist{
+  margin-left: 10px;
+}
+
+.notification {
+  position: fixed;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2ecc71;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  z-index: 2000;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
